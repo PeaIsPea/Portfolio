@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1d77f90610.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/icons8-user-48.png" type="image/x-icon">
+
+    <title >Portfolio</title>
+</head>
+<body>
+<div id = "header">
+    <div class="containt">
+
+        <nav>
+            <img src="images/logo.PNG" class="logo">
+            <ul id="sidemenu">
+                <li>
+                    <a href="#header">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Developer/Music Producer</p>
+            <h1>Hi, I'm <span>Nguyen Ngoc Phuc</span> <br> from Viet Nam</h1>
+        </div>
+    </div>
+
+</div>
+
+<!------------about-------------------->
+<div id="about">
+    <div class="containt">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a fourth-year student majoring in Information Technology 
+                    🎓 at An Giang University 🏛.I am a curious person, always 
+                    ready to learn and work on many different technologies and fields💡.
+                    I love to explore new technologies and constantly improve myself to 
+                    become better than yesterday ✨.
+                    
+                
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Projects</p>
+                    <p class="tab-links" onclick="opentab('education')">Languages</p>
+                </div>
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul>
+                        
+                        <li><span >👨‍💻 Front-End</span><br><i class="fa-brands fa-html5" style="color: #e65c00;"></i> HTML -  
+                            <i class="fa-brands fa-css3-alt" style="color: #63E6BE;"></i>CSS
+                            
+
+                        
+                        </body></li>
+                        <li><span>⚙️ Back-End</span><br><i class="fa-brands fa-python" style="color: #FFD43B;"></i> PYTHON - 
+                            <i class="fa-solid fa-c" style="color: #74C0FC;"></i> C/C++ - 
+                            <i class="fa-brands fa-php" style="color: #74C0FC;"></i> PHP
+                        
+                        
+                        </li>
+                        <li><span>⚡ Database</span><br>
+                            <i class="fa-solid fa-database" style="color: #FFD43B;"></i> MySQL - 
+                            <i class="fa-solid fa-server" style="color: #FFD43B;"></i> MicroSoft SQL Server
+                        
+                        
+                        </li>
+
+                        <li><span>💻 OS</span><br>
+                            <i class="fa-brands fa-windows" style="color: #74C0FC;"></i> Windows - 
+                            <i class="fa-brands fa-linux" style="color: #c11515;"></i> Linux
+                        
+                        
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span><i class="fa-solid fa-message" style="color: #FFD43B;"></i> REAL-TIME CHAT APP</span><br>
+                            •	Developed a comprehensive messaging platform enabling real-time text, image, audio, and video communication. <br>
+                            •	Implemented robust group chat functionality for efficient collaboration. <br>
+                            •	Facilitated seamless file sharing among users. <br>
+                            •	Designed a user-centric interface with customizable options. <br>
+                            •	Integrated social network login for enhanced user experience(in progress). <br>
+                            •	Technologies used : Python.
+                            •	Libraries used:  Tkinter, PIL,... <br>
+                            <a href="https://github.com/PeaIsPea/RealTimeChatApp" class="project-link" target="_blank">Project is here <i class="fa-solid fa-arrow-up-right-from-square"></i></a>   
+                        
+                        
+                        </li>
+                        <li><span><i class="fa-solid fa-face-surprise" style="color: #74C0FC;"></i> FACE RECOGNITION - STUDENT ATTENDANCE SYSTEM</span><br>
+                            •	Developed a facial recognition system for a school district, automating attendance tracking and providing real-time data for administrators.  <br>
+                            •	The system leverages deep learning algorithms to accurately identify students and integrates with existing student information systems. <br>
+                            •	Completed as an individual project with self-taught skills. <br>
+                            •	Technologies used: Python, Haar Cascades. <br>
+                            •	Framework used: OpenCV. <br>
+                            <a href="https://github.com/PeaIsPea/Face_Recognition" class="project-link" target="_blank">Project is here <i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                        
+                        
+                        </li>
+                        <li><span><i class="fa-solid fa-fish" style="color: #41be13;"></i> Website Selling Clean Food</span><br>
+                            •	Designed and developed a custom software solution to streamline operations for a clean food store. <br>
+                            •	Utilized programming languages HTML, CSS, PHP, BOOTSTRAP to create a robust system for managing products, categories, sales data, and user accounts. <br>
+                            •	Integrated a secure payment gateway to facilitate seamless transactions. <br>
+                            <a href="https://github.com/PeaIsPea/BanThucPham" class="project-link" target="_blank">Project is here <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                            
+                        
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>English <i class="fa-solid fa-language" style="color: #B197FC;"></i>
+                        </span><br>
+                        English with a VSTEP B1 certificate.
+                        
+                        
+                        </li>
+                        <li><span>Korean <i class="fa-solid fa-language" style="color: #24008e;"></i></span><br>
+                            Possesses fundamental Korean language skills, enabling basic communication for tasks such as information exchange, self-introduction, and simple dialogues.
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----------------services------------------------------>
+<div id="services">
+    <div class="containt">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Code </h2>
+                <p>Muon noi gi noi</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Music </h2>
+                <p>Muon noi gi noi2</p>
+                <a href="#">Learn more2</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Design </h2>
+                <p>Muon noi gi noi 3</p>
+                <a href="#">Learn more 3</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-----------------------------Portfolio----->
+<div id="portfolio">
+    <div class="containt">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            
+            <div class="work">
+                <img src="images/work_1.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work_2.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work_3.webp">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!------------Contact-->
+<div id="contact">
+    <div class="containt">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> nnphuc2201@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0919623600</p>
+                <div class="social-icons">
+                    <a href="https://github.com/PeaIsPea" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/html.html.2dasd/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://open.spotify.com/artist/0wBHW81onV2Yi04HXVCT0f" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="https://www.instagram.com/pea_2201" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.youtube.com/@PeaPeaPea"target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="myCV.pdf" download class="btn btn2">Download CV</a>
+
+
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Nguyen Ngoc Phuc with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+    
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyPgobEHyEBFp2DYuO-TpWCzP7-8BGM6JL3LOfktTNyG47iZWevk1zB4n1R7nCrv8Bj/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully "
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.resest()
+        })
+        
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
